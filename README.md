@@ -104,7 +104,7 @@ To access the admin panel, log in with the credentials created during the setup.
 
 ### Screenshots
 
-![Manufacturers page](Screenshots/Screenshot%202024-10-20%20at%2002.09.47.png)
+![Manufacturers page](https://github.com/k4rimDev/Flask-Metakam/blob/main/screenshots/Screenshot%202024-10-20%20at%2002.09.47.png)
 ![Edit Manufacturers](Screenshots/Screenshot%202024-10-20%20at%2002.09.54.png)
 ![Add Manufacturers](Screenshots/Screenshot%202024-10-20%20at%2002.10.02.png)
 ![Brand page](Screenshots/Screenshot%202024-10-20%20at%2002.10.08.png)
