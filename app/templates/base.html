@@ -9,12 +9,18 @@
 <body>
     <nav>
         <div class="nav-wrapper">
-            <a href="/" class="brand-logo">
+            <a href="{{ url_for('admin_client.brands') }}" class="brand-logo">
                 METAKAM
             </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down d-flex">
-                <li><a href="{{ url_for('auth.login') }}">Login</a></li>
-                <li><a href="{{ url_for('auth.logout') }}">Logout</a></li>
+                <li><a href="{{ url_for('admin_client.brands') }}">Brands</a></li>
+                <li><a href="{{ url_for('admin_client.manufacturers') }}">Manufacturers</a></li>
+
+                {% if current_user.is_authenticated %}
+                    <li><a href="{{ url_for('auth.logout') }}">Logout</a></li>
+                {% else %}
+                    <li><a href="{{ url_for('auth.login') }}">Login</a></li>
+                {% endif %}
             </ul>
         </div>
     </nav>
