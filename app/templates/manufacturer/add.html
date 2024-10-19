@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Manufacturer{% endblock %}
+
+{% block content %}
+<h2>Add New Manufacturer</h2>
+<form method="POST">
+    {{ form.csrf_token }}
+    <div class="form-group">
+        {{ form.name.label }} {{ form.name(class="form-control") }}
+    </div>
+    <div class="form-group">
+        {{ form.description.label }} {{ form.description(class="form-control") }}
+    </div>
+    <div class="form-group">
+        {{ form.country.label }} {{ form.country(class="form-control") }}
+    </div>
+    <div class="form-group">
+        {{ form.certificates.label }} {{ form.certificates(class="form-control") }}
+    </div>
+    <div class="form-group">
+        {{ form.internal_id.label }} {{ form.internal_id(class="form-control") }}
+    </div>
+    <button type="submit" class="btn">Add Manufacturer</button>
+</form>
+{% endblock %}

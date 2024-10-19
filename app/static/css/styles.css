@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.d-flex{
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav-wrapper a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.btn-small {
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px;
+    box-sizing: border-box;
+}
+
+
+.alert {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.alert-success {
+    background-color: #28a745;
+}
+
+.alert-message {
+    background-color: #17a2b8;
+}
+
+.alert-error {
+    background-color: #dc3545;
+}
+
+.alert-info {
+    background-color: #17a2b8;
+}
+
+.alert-warning {
+    background-color: #ffc107;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f4f4f4;
+}
+
+.btn {
+    padding: 8px 12px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.mt-5{
+    margin-top: 30px;
+}

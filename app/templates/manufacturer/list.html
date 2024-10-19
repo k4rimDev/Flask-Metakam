@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Manufacturer Management{% endblock %}
+
+{% block content %}
+<h2>Manage Manufacturers</h2>
+<a href="{{ url_for('admin_client.add_manufacturer') }}" class="btn">+ Add New Manufacturer</a>
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Country</th>
+            <th>Certificates</th>
+            <th>Internal ID</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for manufacturer in manufacturers %}
+        <tr>
+            <td>{{ manufacturer.name }}</td>
+            <td>{{ manufacturer.description }}</td>
+            <td>{{ manufacturer.country }}</td>
+            <td>{{ manufacturer.certificates }}</td>
+            <td>{{ manufacturer.internal_id }}</td>
+            <td>
+                <a href="{{ url_for('admin_client.edit_manufacturer', id=manufacturer.id) }}" class="btn btn-small">Edit</a>
+                <form action="{{ url_for('admin_client.delete_manufacturer', id=manufacturer.id) }}" method="post" style="display:inline;">
+                    <button type="submit" class="btn btn-small btn-danger">Delete</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

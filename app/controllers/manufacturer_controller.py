@@ -17,3 +17,21 @@ class ManufacturerController:
                                     certificates=certificates, internal_id=internal_id)
         db.session.add(manufacturer)
         db.session.commit()
+        
+    @staticmethod
+    def update_manufacturer(manufacturer, name, description, country, certificates, internal_id):
+        manufacturer.name = name
+        manufacturer.description = description
+        manufacturer.country = country
+        manufacturer.certificates = certificates
+        manufacturer.internal_id = internal_id
+        db.session.commit()
+
+    @staticmethod
+    def delete_manufacturer(manufacturer_id):
+        manufacturer = ManufacturerController.get_manufacturer_by_id(manufacturer_id)
+        if manufacturer:
+            db.session.delete(manufacturer)
+            db.session.commit()
+            return True
+        return False

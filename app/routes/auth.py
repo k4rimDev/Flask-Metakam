@@ -16,9 +16,10 @@ def login():
         user = UserController.authenticate(username, password)
         if user:
             login_user(user)
+            flash("Successfully logged in!", "success")
             return redirect(url_for('admin.index'))
         else:
-            flash('Invalid username or password')
+            flash('Invalid username or password', 'error')
     return render_template('login.html')
 
 

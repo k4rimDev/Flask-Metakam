@@ -1,12 +1,33 @@
 {% extends 'base.html' %}
+
+{% block title %}Brand Management{% endblock %}
+
 {% block content %}
-<h2>Brands</h2>
-<form method="POST" enctype="multipart/form-data">
-    {{ form.csrf_token }}
-    {{ form.name.label }} {{ form.name() }}
-    {{ form.description.label }} {{ form.description() }}
-    {{ form.internal_id.label }} {{ form.internal_id() }}
-    {{ form.logo.label }} {{ form.logo() }}
-    {{ form.submit() }}
-</form>
+<h2>Manage Brands</h2>
+<a href="{{ url_for('admin_client.add_brand') }}" class="btn">+ Add New Brand</a>
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Internal ID</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for brand in brands %}
+        <tr>
+            <td>{{ brand.name }}</td>
+            <td>{{ brand.description }}</td>
+            <td>{{ brand.internal_id }}</td>
+            <td>
+                <a href="{{ url_for('admin_client.edit_brand', id=brand.id) }}" class="btn btn-small">Edit</a>
+                <form action="{{ url_for('admin_client.delete_brand', id=brand.id) }}" method="post" style="display:inline;">
+                    <button type="submit" class="btn btn-small btn-danger">Delete</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
 {% endblock %}
