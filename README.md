@@ -105,14 +105,14 @@ To access the admin panel, log in with the credentials created during the setup.
 ### Screenshots
 
 ![Manufacturers page](https://github.com/k4rimDev/Flask-Metakam/blob/main/screenshots/Screenshot%202024-10-20%20at%2002.09.47.png)
-![Edit Manufacturers](Screenshots/Screenshot%202024-10-20%20at%2002.09.54.png)
-![Add Manufacturers](Screenshots/Screenshot%202024-10-20%20at%2002.10.02.png)
-![Brand page](Screenshots/Screenshot%202024-10-20%20at%2002.10.08.png)
-![Add Brand](Screenshots/Screenshot%202024-10-20%20at%2002.10.13.png)
-![Login page](Screenshots/Screenshot%202024-10-20%20at%2002.10.21.png)
-![Login page](Screenshots/Screenshot%202024-10-20%20at%2002.10.27.png)
-![Admin create](Screenshots/Screenshot%202024-10-20%20at%2002.10.32.png)
-![Login page](Screenshots/Screenshot%202024-10-20%20at%2002.12.13.png)
+![Edit Manufacturers](https://github.com/k4rimDev/Flask-Metakam/blob/main/screenshots/Screenshot%202024-10-20%20at%2002.09.54.png)
+![Add Manufacturers](https://github.com/k4rimDev/Flask-Metakam/blob/main/screenshots/Screenshot%202024-10-20%20at%2002.10.02.png)
+![Brand page](https://github.com/k4rimDev/Flask-Metakam/blob/main/screenshots/Screenshot%202024-10-20%20at%2002.10.08.png)
+![Add Brand](https://github.com/k4rimDev/Flask-Metakam/blob/main/screenshots/Screenshot%202024-10-20%20at%2002.10.13.png)
+![Login page](https://github.com/k4rimDev/Flask-Metakam/blob/main/screenshots/Screenshot%202024-10-20%20at%2002.10.21.png)
+![Login page](https://github.com/k4rimDev/Flask-Metakam/blob/main/screenshots/Screenshot%202024-10-20%20at%2002.10.27.png)
+![Admin create](https://github.com/k4rimDev/Flask-Metakam/blob/main/screenshots/Screenshot%202024-10-20%20at%2002.10.32.png)
+![Login page](https://github.com/k4rimDev/Flask-Metakam/blob/main/screenshots/Screenshot%202024-10-20%20at%2002.12.13.png)
 
 
 ## Contact
